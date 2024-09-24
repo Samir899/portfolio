@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head th:replace="head :: content('Home - Samir Kumar', 'none')" />
+
+<body class="ubuntu-medium gradient">
+	<div th:replace="fragments::navigation"></div>
+	<div class="container-fluid">
+		<div class="mt-5 pt-2">
+			<div class="d-grid gap-5 custom-max-width" style="margin:0 auto;">
+				<section id="home" class="d-grid gap-5">
+					<div th:replace="home::content"></div>
+					<div th:replace="about::content"></div>
+				</section>
+
+				<section id="skillsAndCert">
+					<div th:replace="skills::content"></div>
+				</section>
+	
+				<section id="projects">
+					<div th:replace="projects::content"></div>
+				</section>
+				<section id="experience">
+					<div th:replace="experience::content"></div>
+				</section>
+				<section id="education">
+					<div th:replace="education::content"></div>
+				</section>
+				<section id="contact">
+					<div th:replace="contact::content"></div>
+				</section>
+			</div>
+		</div>
+		
+	</div>
+	<div th:replace="fragments::footer"></div>
+	
+	<div class="modal fade" id="detailModal" >
+		<div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content">
+			</div>
+		</div>
+	</div>
+<script>
+
+function scrollToElement(id){
+	const element = document.getElementById(id);
+	const offset = 75;  // Define your offset in pixels
+	const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+
+	window.scrollTo({
+	  top: elementPosition - offset,  // Scroll to the element with the offset
+	  behavior: "smooth"              // Smooth scrolling
+	});
+}
+
+window.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    let currentSection = '';
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 110; // Offset to account for navbar height
+        const sectionHeight = section.clientHeight;
+        
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach((link) => {
+        link.classList.remove('active');
+        if (currentSection && link.getAttribute('onclick').includes(currentSection)) {
+            link.classList.add('active');
+        }
+    });
+});
+
+
+$(".link-detail").on("click", function(e){
+	e.preventDefault();
+	linkDetailURL = $(this).attr("href");
+	$("#detailModal").modal("show").find(".modal-content").load(linkDetailURL)
+});
+
+</script>
+</body>
+</html>

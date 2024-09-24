@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	<body>
+	<div th:fragment="content">
+		<div class="d-grid gap-4">
+			<div class="text-center">
+				<span class="fs-2 text-light">About Me</span>
+			</div>
+			<div class="text-justify">
+				<div class="row border rounded p-2" style="background-color:white;">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+						<img th:src="@{/images/about.png}" class="img-fluid"/>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+							<div class="border border-warning border-2 rounded m-2">
+								<p class="p-2">
+								 I am a dedicated Java Backend Developer with 3 years of
+								 experience in designing and implementing backend architectures
+								 for various applications. My expertise includes working 
+								 with frameworks like Spring Boot, Hibernate, and microservices architecture. 
+								 I excel in developing APIs, optimizing databases, and ensuring seamless 
+								 integration between frontend and backend systems.
+								</p>
+					
+								 <p class="p-2">With a solid understanding of object-oriented programming 
+									principles and a focus on writing clean, maintainable code, 
+									I thrive on tackling complex challenges and turning them 
+									into efficient solutions.</p>
+							</div>
+					 	</div>
+					 </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	<body>
+	<div th:fragment="content" >
+		<div class="d-grid gap-4">
+	
+			<div class="text-center">
+				<span class="fs-2 text-light">Projects</span>
+			</div>
+			<div class="">
+				<div class="row border rounded p-2" style="background-color:white;">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+						<img th:src="@{/images/working.png}" class="img-fluid"/>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+						<div class="container-fluid border rounded border-warning border-2 py-4 m-3">
+							<div class="">
+								<ul class="fs-4 d-grid gap-3">
+									<li><a class="link-detail" th:href="@{/project/ecommerce/details}">E-commerce Platform Backend <i class="fa-solid fa-arrow-up-right-from-square fa-2xs" style="color: #DC5F00;"></i></a></li>
+									<li><a class="link-detail" th:href="@{/project/insurance/details}">Microservices-based Insurane App <i class="fa-solid fa-arrow-up-right-from-square fa-2xs" style="color: #DC5F00;"></i></a></li>
+									<li><a class="link-detail" th:href="@{/project/buffalo_expression/details}">Buffalo Expression Database <i class="fa-solid fa-arrow-up-right-from-square fa-2xs" style="color: #DC5F00;"></i></a></li>
+									<li><a class="link-detail" th:href="@{/project/automation_framework/details}">Web-based Automation Framework <i class="fa-solid fa-arrow-up-right-from-square fa-2xs" style="color: #DC5F00;"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	<body>
+	<div th:fragment="content" >
+	
+	<div class="d-grid gap-4">
+		<div class="text-center">
+				<span class="fs-2 text-light">Education</span>
+			</div>
+			<div >
+				<div class="row border rounded p-2" style="background-color:white;">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+						<img th:src="@{/images/student.png}" class="img-fluid"/>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+						<div class="border border-warning border-2 rounded m-2 p-2">
+							<h4>Bachelor’s in Electronics and Communication Engineering</h4>
+							<h5>Cochin University of Science and Technology</h5>
+							<h6>July, 2017 – July, 2021</h6>
+						</div>
+				 	</div>
+				 </div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

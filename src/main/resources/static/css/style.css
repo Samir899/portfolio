@@ -1,0 +1,86 @@
+.topnav-color{
+	background-color: #131842;
+}
+.footer-color{
+	background-color: #131842;
+	color:white;
+}
+a{
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:hover{
+	cursor:pointer;
+}
+
+.gradient{
+	  background-image: linear-gradient(180deg, #131842, white);
+	  
+}
+.text-justify{
+	text-align: justify;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+/* Custom max-width for different breakpoints */
+ .custom-max-width {
+   max-width: 90%; /* Default for extra-small screens */
+ }
+
+ @media (min-width: 576px) {
+   .custom-max-width {
+     max-width: 80%; /* 50% for small screens and above */
+   }
+ }
+
+ @media (min-width: 768px) {
+   .custom-max-width {
+     max-width: 75%; /* 75% for medium screens and above */
+   }
+ }

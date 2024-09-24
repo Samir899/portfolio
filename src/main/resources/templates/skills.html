@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	<body>
+	<div th:fragment="content">
+		<div class="d-grid gap-4">
+			<div class="text-center p-2">
+				<span class="fs-2 text-light">Skills and Certifications</span>
+			</div>
+			<div>
+				<div class="row border rounded p-2" style="background-color:white;">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+						<img th:src="@{/images/skills.png}" class="img-fluid"/>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+						<div class="border border-warning border-2 rounded m-2 p-2">
+							<div class="">
+								<h4>Skills</h4>
+								<ul class="p-4">
+									<li>Languages: Java, SQL, Python</li>
+									<li>Frameworks: Spring Boot, Hibernate, JPA</li>
+									<li>Databases: MySQL, PostgreSQL, MongoDB</li>
+									<li>Tools: Docker, Jenkins, Git, Maven</li>
+									<li>Cloud: AWS, Azure</li>
+									<li>Other: Microservices, RESTful APIs, CI/CD, Agile Methodology</li>
+								</ul>
+							</div>
+							<div class="">
+								<h4>Certifications</h4>
+									<ul class="p-4">
+										<li>AWS Certified Cloud Practitioner</li>
+										<li>Guidewire Certified Insurance Suite Developer</li>
+									</ul>
+							</div>				
+						 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
