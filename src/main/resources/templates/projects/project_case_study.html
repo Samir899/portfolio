@@ -10,30 +10,13 @@
 </style>
 <body class="ubuntu-regular" >
 	<div>
-		<section id="home" class="d-grid gap-5 bg-image">
+		<section id="info" class="d-grid gap-5 bg-image">
 			<div th:replace="fragments::navigation"></div>
-			<div th:replace="home::content"></div>
+			<div th:replace="projects/project_info::content('E-Commerce Platform Backend', 'This page contains the case study of E-commerce Platform Backend Project which includes the Project Overview, Tools Used and Live Links to the official product.', 'https://www.link.com')"></div>
 		</section>
-		<section id="about" class="container-fluid">
-			<div th:replace="about::content"></div>
-		</section>
-		<!--  <section id="skillsAndCert" class="container-fluid">
-			<div th:replace="skills::content"></div>
-		</section> -->
-
-		<section id="projects" class="container-fluid">
-			<div th:replace="projects::content"></div>
-		</section>
-		<!--  -->
-		<section id="experience" class="container-fluid">
-			<div th:replace="experience::content"></div>
-		</section>
-		<section id="education" class="container-fluid">
-			<div th:replace="education::content"></div>
-		</section>
-		<section id="contact" class="container-fluid bg-image">
-			<div th:replace="contact::content"></div>
-		</section>
+ 		<section id="detail" class="container-fluid">
+			<div th:replace="projects/project_details::content"></div>
+		</section> 
 	</div>
 
 

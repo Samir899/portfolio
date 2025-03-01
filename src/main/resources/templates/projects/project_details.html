@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+	<body>
+	
+	<div th:fragment="content" class="container-fluid">
+		<div class="">
+			<div class="row d-flex justify-content-center">
+				<div class="p-5">
+					<img th:src="@{/images/ecom.jpeg}" class="img-fluid" />
+				</div>
+			</div>
+			
+			<div class="row d-flex justify-content-center">
+				<div class="custom-max-width-half text-justify p-2 d-grid gap-3">
+					<h4 class="fs-3 fw-bold">Project Overview</h4>
+					<p  style="color:grey;">
+					
+					I designed and developed a robust backend platform for an e-commerce website, 
+					providing extensive management capabilities for products, customers, and sales. 
+					Key features include:
+					
+					</p>
+					<p  style="color:grey;">
+					
+						<span class="fw-bold">Product and Customer Management:</span> Users with the necessary authority can 
+						list new products, update or remove existing ones, manage customer profiles, 
+						configure shipping rates, and create/delete product categories and brands.
+					
+					</p>
+					<p  style="color:grey;">
+						<span class="fw-bold">Role-Based Access Control:</span> Admins can configure users with specific roles and 
+						permissions, granting tailored access to the platform's features.
+					    Admins can also manage email settings to enable notifications through the platform.
+					
+					
+					</p>
+					<p  style="color:grey;">
+						 <span class="fw-bold">Real-Time Discount and Promotion Management:</span> Sales personnel can post advertisements
+						 and apply discounts to products, which are reflected in real time across the platform.
+					
+					</p>
+					<p  style="color:grey;">
+						<span class="fw-bold">Order and Shipping Updates: </span>Sellers can view and manage customer orders,
+					 	update the order status once products are packed and ready for dispatch, and
+					 	rely on the integrated logistics API to automatically update order statuses after dispatch.
+					
+					</p>
+					<p  style="color:grey;">
+						<span class="fw-bold">Sales Reporting: </span> The platform offers detailed sales reports, allowing 
+						sellers to view data monthly, quarterly, semi-annually, and annually. 
+						This helps sellers gain valuable insights into their business performance 
+						and plan ahead effectively.
+					
+					</p>
+					<p  style="color:grey;">
+					  This backend platform ensures smooth e-commerce operations, providing
+					  real-time data updates and a comprehensive toolkit for managing products,
+					  customers, orders, and sales performance.
+					
+					</p>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center ">
+				<div class="custom-max-width-half p-2">
+					<div class="row py-2">
+						<h4 class="fs-4 fw-bold">Tools Used</h4>
+					</div>
+					
+					<div class="row py-2">				
+						<div class="snow col-12 col-sm-12 col-md-6 col-lg-6">Spring Boot</div>
+						<div class="snow col-12 col-sm-12 col-md-6 col-lg-6">HTML</div>
+						<div class="snow col-12 col-sm-12 col-md-6 col-lg-6">CSS</div>
+						<div class="snow col-12 col-sm-12 col-md-6 col-lg-6">JavaScript</div>
+						<div class="snow col-12 col-sm-12 col-md-6 col-lg-6">Thymeleaf</div>
+					</div>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class="custom-max-width-half p-2">
+					<div class="row py-2">
+						<h4 class="fs-4 fw-bold">See Live</h4>
+					</div>
+					<div class="row py-2">
+						<div class="d-flex">
+							<a href="https://www.link.com" target="_blank" class="rounded custom-padding-x py-2 btn-custom-blue ubuntu-bold  ">Project Link</a>
+							<a th:href="@{/}" class="rounded custom-padding-x py-2 btn-custom-blue-border ubuntu-bold mx-2">Go Back</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

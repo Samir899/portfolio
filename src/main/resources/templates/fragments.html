@@ -2,52 +2,80 @@
 <html xmlns:th="https://www.thymeleaf.org">
 
 	<body>
-		<nav th:fragment="navigation" class="navbar navbar-expand-lg navbar-dark position-fixed topnav-color top-0" style="width:100vw;">
-		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#">Portfolio</a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		      <div class="navbar-nav">
-		        <a class="nav-link active" aria-current="page" onclick="scrollToElement('home')">Home</a>
-		        <a class="nav-link" onclick="scrollToElement('skillsAndCert')">Skills & Certifications</a>
-		        <a class="nav-link" onclick="scrollToElement('projects')">Projects</a>
-		        <a class="nav-link" onclick="scrollToElement('experience')">Experience</a>
-		        <a class="nav-link" onclick="scrollToElement('education')">Education</a>
-		        <a class="nav-link" onclick="scrollToElement('contact')">Contact</a>
-		        <a class="nav-link" onclick="download()">Downloads</a>
-		      </div>
-		    </div>
-		  </div>
+		  <nav th:fragment="navigation" class="navbar navbar-expand-lg navbar-light topnav-custom position-fixed custom-padding-x container-fluid" style="z-index:2;">
+				<div class="custom-padding-x">
+			    	<a class="navbar-brand" href="#">	    
+			    		<img th:src="@{/images/samir.jpg}" alt="" width="60" height="60" class="rounded-circle border border-5"/>	    
+			    	</a>
+			    	<a th:href="@{/}" class="" style="color:black;"><span>SAMIR KUMAR</span></a>
+				</div>
+		      	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      			<span class="navbar-toggler-icon"></span>
+    			</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			      <div class="navbar-nav">
+			      	<div class="nav-link active d-flex justify-content-end p-4 custom-border cursor-pointer" onclick="scrollToElement('home')">
+			      		<span>HOME</span>
+			      	</div>
+			      	<div class="nav-link d-flex justify-content-end p-4 custom-border cursor-pointer" onclick="scrollToElement('projects')">
+			      		<span>ABOUT</span>
+			      	</div>
+			      	<div class="nav-link d-flex justify-content-end p-4 custom-border cursor-pointer" onclick="scrollToElement('projects')">
+			      		<span>PROJECT</span>
+			      	</div><div class="nav-link d-flex justify-content-end p-4 custom-border cursor-pointer" onclick="scrollToElement('skillsAndCert')">
+			      		<span>CERTIFICATION</span>
+			      	</div><div class="nav-link d-flex justify-content-end p-4 cursor-pointer" onclick="scrollToElement('contact')">
+			      		<span>CONTACT</span>
+			      	</div>
+			      </div>
+			  </div>
 		</nav>
-		<div th:fragment="footer" class="footer-color">
-			<div class="container-fluid">
-	       		<div class="row">
-	           		<div class="col-md-6 p-3">
-	               		<p style="margin:0px;">&copy; Samir Kumar 2024. All rights reserved.</p>
-	           		</div>
-	            	<div class="col-md-6 text-md-end p-3">
-		                <ul class="list-inline" style="margin:0px;">
-		                    <li class="list-inline-item">
-		                        <a href="https://www.linkedin.com/in/samir-kumar-935149167" target="_blank">
-		                        	<i class="fa-brands fa-linkedin fa-2xl" style="color: #FFF5E4;"></i>
-		                        </a>
-		                    </li>
-		                    <li class="list-inline-item">
-		                        <a href="https://github.com/sam3389" target="_blank">
-		                        	<i class="fa-brands fa-github fa-2xl" style="color: #FFF5E4;"></i>
-		                        </a>
-		                    </li>
-		                    <li class="list-inline-item">
-		                        <a href="mailto:sameerkmr823@hmail.com">
-		                        	<i class="fa-solid fa-envelope fa-2xl"  style="color: #FFF5E4;"></i>
-		                        </a>
-		                    </li>
-		                </ul>
-	            	</div>
-	       		</div>
-       		</div>
+		<div th:fragment="footer" class="footer-color custom-padding-x py-4">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 custom-display-hidden">
+					<div class="">
+						<div class="d-flex fw-bold fs-4 py-3">
+							SOCIAL
+						</div>
+						<div class="d-flex py-2 mt-2">
+							<i class="fa-brands fa-linkedin fa-xl"></i>
+							<i class="fa-brands fa-github fa-xl mx-3"></i>
+							<i class="fa-brands fa-instagram fa-xl"></i>
+							<i class="fa-solid fa-envelope fa-xl mx-3" ></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-start mt-3">
+					<div>
+						<div class="fw-bold fs-4 py-2">
+							SAMIR KUMAR
+						</div>
+						<div class="py-2 fs-6 fw-light" >
+							A Backend Developer, building and managing high-performance backend systems that drive user satisfaction and business growth.
+						</div>
+					</div>
+						
+				</div>
+				
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 custom-display-block">
+					<div class="d-flex justify-content-end">
+						<div>
+							<div class="d-flex fw-bold fs-4 py-2">
+								SOCIAL
+							</div>
+							<div class="d-flex py-2 mt-2">
+								<i class="fa-brands fa-linkedin fa-xl"></i>
+								<i class="fa-brands fa-github fa-xl mx-3"></i>
+								<i class="fa-brands fa-instagram fa-xl"></i>
+								<i class="fa-solid fa-envelope fa-xl mx-3" ></i>
+							</div>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+			<div class="row border-bottom border-warning my-5 mx-3"></div>
+			<div class="row d-flex justify-content-center" style="font-size:15px;">&copy; 2024. Developed by Samir Kumar</div>
 		</div>
 	</body>
 </html>

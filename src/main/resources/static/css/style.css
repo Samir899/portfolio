@@ -1,8 +1,8 @@
-.topnav-color{
-	background-color: #131842;
+.topnav-custom{
+	background-color: white;
 }
 .footer-color{
-	background-color: #131842;
+	background-color:black;
 	color:white;
 }
 a{
@@ -45,6 +45,26 @@ a:hover{
   font-style: normal;
 }
 
+.btn-custom-blue{
+	background-color:#7843E9;
+	color:white;
+	border:2px solid white;
+}
+.btn-custom-blue:hover{
+	background-color:white;
+	border:2px solid #7843E9;
+	color:#7843E9;
+}
+.btn-custom-blue-border{
+	background-color:white;
+	color:#7843E9;
+	border:2px solid #7843E9;
+}
+.btn-custom-blue-border:hover{
+	background-color:#7843E9;
+	color:white;
+	
+}
 .ubuntu-light-italic {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -70,7 +90,7 @@ a:hover{
 }
 /* Custom max-width for different breakpoints */
  .custom-max-width {
-   max-width: 90%; /* Default for extra-small screens */
+   max-width: 100%; /* Default for extra-small screens */
  }
 
  @media (min-width: 576px) {
@@ -84,3 +104,128 @@ a:hover{
      max-width: 75%; /* 75% for medium screens and above */
    }
  }
+ 
+ /* Custom max-width for different breakpoints */
+ .custom-max-width-half {
+   max-width: 100%; /* Default for extra-small screens */
+ }
+
+ @media (min-width: 576px) {
+   .custom-max-width-half {
+     max-width: 80%; /* 50% for small screens and above */
+   }
+ }
+
+ @media (min-width: 768px) {
+   .custom-max-width-half {
+     max-width: 50%; /* 50% for medium screens and above */
+   }
+ }
+ 
+ /* Custom max-width for different breakpoints */
+ .custom-width {
+   width: 95%; /* Default for extra-small screens */
+ }
+
+ @media (min-width: 576px) {
+   .custom-width {
+     width: 75%; /* 50% for small screens and above */
+   }
+ }
+
+ @media (min-width: 768px) {
+   .custom-width {
+     max-width: 75%; /* 50% for medium screens and above */
+   }
+ }
+ 
+ /* Custom display for different breakpoints */
+ .custom-display-hidden{
+   display: block; /* Default for extra-small screens */
+ }
+
+ @media (min-width: 576px) {
+   .custom-display-hidden {
+     display: block; /* 50% for small screens and above */
+   }
+ }
+
+ @media (min-width: 768px) {
+   .custom-display-hidden {
+     display:none; /* 50% for medium screens and above */
+   }
+ }
+  /* Custom display for different breakpoints */
+ .custom-display-block{
+   display: none; /* Default for extra-small screens */
+ }
+
+ @media (min-width: 576px) {
+   .custom-display-block {
+     display: none; /* 50% for small screens and above */
+   }
+ }
+
+ @media (min-width: 768px) {
+   .custom-display-block {
+     display:block; /* 50% for medium screens and above */
+   }
+ }
+ .cursor-pointer{
+	 cursor:pointer;
+ }
+ /* Custom border for different breakpoints */
+ .custom-border {
+   border-bottom:1px solid #DEE2E6; /* Default for extra-small screens */
+ }
+
+
+ @media (min-width: 991px) {
+   .custom-border {
+     border-bottom: none; /* 75% for medium screens and above */
+   }
+ }
+  /* Custom padding for different breakpoints */
+ .custom-padding-x {
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+
+ @media (min-width: 991px) {
+   .custom-padding-x {
+     padding-left: 20px;
+  	 padding-right: 20px;
+   }
+ }
+.custom-container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100vw;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#about{
+	background-color:#FAFAFA;
+}
+.snow{
+	background-color: #E7E7E7;
+	font-weight: 500;
+	color:#66668F;
+	width:fit-content;
+	padding: 8px 16px;
+	border-radius: 8px;
+	margin:5px;
+	
+}
+#projects{
+	background-color:#FFFFFF;
+}
+

@@ -10,9 +10,9 @@ public class MainController {
 	public String index() {
 		return "index";
 	}
-	@GetMapping("/project/ecommerce/details")
+	@GetMapping("/project/ecommerce/case-study")
 	public String projectEcommerceDetails() {
-		return "projects/project_ecom";
+		return "projects/project_case_study";
 	}
 	@GetMapping("/project/insurance/details")
 	public String projectInsuranceDetails() {
